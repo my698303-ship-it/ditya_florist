@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunga Ditya Florist | Toko Bunga Premium Gulai Bancah Bukittinggi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- File CSS Terpisah -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-rose-50/50 text-slate-800 font-sans anti-aliased selection:bg-rose-200 selection:text-rose-900">
+
+    <!-- TOPBAR INFORMASI -->
+    <div class="bg-rose-600 text-white text-xs py-2 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid font-bold fa-location-dot text-rose-200"></i> Gulai Bancah, Bukittinggi</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-clock text-rose-200"></i> Buka 24 Jam Nonstop</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/6285184046709" target="_blank" class="hover:underline flex items-center gap-1.5 font-medium">
+                    <i class="fa-brands fa-whatsapp text-green-300 text-sm"></i> 0851-8404-6709
+                </a>
+                <span class="text-rose-300">|</span>
+                <span class="text-rose-100">Pesan Pengiriman Hari Ini!</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR UTAMA -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-rose-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full bg-rose-500 flex items-center justify-center text-white shadow-md shadow-rose-200 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-fan text-2xl animate-spin-slow"></i>
+                </div>
+                <div>
+                    <span class="font-serif text-2xl font-bold tracking-tight text-slate-900 block leading-tight">
+                        Bunga Ditya <span class="text-rose-600">Florist</span>
+                    </span>
+                    <span class="text-[10px] tracking-widest text-rose-500 uppercase font-semibold block">Bukittinggi • Premium Florist</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                <a href="#home" class="hover:text-rose-600 transition-colors py-2 border-b-2 border-transparent hover:border-rose-500">Beranda</a>
+                <a href="#katalog" class="hover:text-rose-600 transition-colors py-2 border-b-2 border-transparent hover:border-rose-500">Katalog Bunga</a>
+                <a href="#owner" class="hover:text-rose-600 transition-colors py-2 border-b-2 border-transparent hover:border-rose-500">Tentang Owner</a>
+                <a href="#keunggulan" class="hover:text-rose-600 transition-colors py-2 border-b-2 border-transparent hover:border-rose-500">Mengapa Kami</a>
+                <a href="#lokasi" class="hover:text-rose-600 transition-colors py-2 border-b-2 border-transparent hover:border-rose-500">Lokasi & Kontak</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="toggleCart()" class="relative p-2.5 rounded-full bg-rose-50 text-rose-600 hover:bg-rose-100 transition-colors focus:outline-none">
+                    <i class="fa-solid fa-basket-shopping text-xl"></i>
+                    <span id="cart-badge" class="absolute -top-1 -right-1 bg-rose-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
+                </button>
+                <a href="https://wa.me/6285184046709?text=Halo%20Bunga%20Ditya%20Florist,%20saya%20ingin%20konsultasi%20pemesanan%20bunga" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-5 py-2.5 rounded-full font-semibold text-sm shadow-md shadow-rose-200 transition-all hover:shadow-lg hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Pesan Langsung</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-rose-100/60 via-pink-50/40 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-rose-100 text-rose-700 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide border border-rose-200">
+                        <i class="fa-solid fa-sparkles text-rose-500"></i> Toko Bunga Terpercaya di Gulai Bancah Bukittinggi
+                    </div>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                        Rangkaian Bunga Segar & Indah untuk <span class="text-rose-600 underline decoration-rose-300 decoration-wavy decoration-2">Momen Spesial Anda</span>
+                    </h1>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Menyediakan Bunga Papan Ucapan, Buket Tangan Wisuda, Bunga Meja, dan Standing Flower dengan bunga segar pilihan. Siap kirim cepat & tepat waktu di Bukittinggi dan sekitarnya.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#katalog" class="w-full sm:w-auto px-8 py-4 bg-rose-600 hover:bg-rose-700 text-white rounded-full font-bold shadow-lg shadow-rose-200 transition-all text-center">
+                            Lihat Katalog Bunga
+                        </a>
+                        <a href="https://wa.me/6285184046709?text=Halo%20Bunga%20Ditya%20Florist,%20saya%20ingin%20tanya%20stok%20bunga" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-rose-50 text-slate-700 border border-rose-200 rounded-full font-bold shadow-sm transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i> Chat WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md">
+                        <div class="relative bg-white/80 backdrop-blur-sm p-4 rounded-3xl shadow-xl border border-rose-100">
+                            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&q=80" alt="Bunga Ditya Florist Display" class="rounded-2xl w-full h-96 object-cover shadow-inner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL OWNER SECTION -->
+    <section id="owner" class="py-16 bg-gradient-to-r from-rose-50 via-white to-rose-50 border-y border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <div class="relative bg-white p-3 rounded-3xl shadow-xl border border-rose-100">
+                            <img src="WhatsApp Image 2026-11-08 at 22.00.34.jpeg" alt="Owner Bunga Ditya Florist" class="w-full max-w-xs sm:max-w-sm h-auto rounded-2xl object-cover shadow-sm">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    <div class="inline-block px-3 py-1 bg-rose-100 text-rose-700 rounded-full text-xs font-semibold">
+                        Sentuhan Kasih & Kreativitas Florist
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">
+                        Salam Hangat dari <span class="text-rose-600">Owner Bunga Ditya Florist</span>
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        "Selamat datang di <b>Bunga Ditya Florist</b>! Kami berkomitmen memberikan rangkaian bunga terbaik yang tidak hanya indah secara visual, tetapi juga membawa pesan mendalam bagi setiap momen spesial Anda di Bukittinggi dan sekitarnya."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KATALOG PRODUK SECTION -->
+    <section id="katalog" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-10">
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Katalog Rangkaian Bunga</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Pilih kategori dan temukan rangkaian bunga segar paling sesuai untuk momen spesial Anda.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="filterCategory('all')" class="cat-btn active px-5 py-2.5 rounded-full text-sm font-semibold border transition-all">Semua Produk</button>
+                <button onclick="filterCategory('papan')" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all">Bunga Papan</button>
+                <button onclick="filterCategory('buket')" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all">Buket Tangan</button>
+                <button onclick="filterCategory('meja')" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all">Bunga Meja</button>
+                <button onclick="filterCategory('standing')" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all">Standing Flower</button>
+            </div>
+
+            <div id="product-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Product Items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CART SIDEBAR DRAWER -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+        <div class="fixed inset-y-0 right-0 pl-10 max-w-full flex">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+                <div class="p-6 bg-rose-600 text-white flex items-center justify-between">
+                    <h2 class="text-lg font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-basket-shopping"></i> Keranjang Pemesanan
+                    </h2>
+                    <button onclick="toggleCart()" class="text-white hover:text-rose-200 text-xl focus:outline-none">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
+
+                <div class="p-6 bg-rose-50 border-t border-rose-100 space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Nama Pemesan</label>
+                        <input type="text" id="cust-name" placeholder="Masukkan nama Anda" class="w-full text-xs p-2.5 rounded-lg border border-rose-200 focus:outline-none focus:ring-2 focus:ring-rose-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Catatan / Ucapan Pita Bunga</label>
+                        <textarea id="cust-notes" rows="2" placeholder="Contoh: Turut Duka Cita dari PT. Mulia Jaya" class="w-full text-xs p-2.5 rounded-lg border border-rose-200 focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+                    </div>
+
+                    <div class="border-t border-rose-200 pt-3 flex justify-between items-center">
+                        <span class="text-sm font-bold text-slate-700">Total Harga</span>
+                        <span id="cart-total" class="text-xl font-bold text-rose-600">Rp 0</span>
+                    </div>
+
+                    <button onclick="checkoutWA()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-md transition-colors flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Checkout via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File JavaScript Terpisah -->
+    <script src="script.js"></script>
+</body>
+</html>

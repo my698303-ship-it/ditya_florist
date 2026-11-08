@@ -1,0 +1,62 @@
+/* Custom Styles for Bunga Ditya Florist */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fff1f2;
+    background-image: radial-gradient(#fecdd3 0.8px, transparent 0.8px), radial-gradient(#fecdd3 0.8px, #fff1f2 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+}
+
+h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Category Filter Active Styling */
+.cat-btn.active {
+    background-color: #e11d48;
+    color: #ffffff;
+    border-color: #e11d48;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
+}
+
+.cat-btn:not(.active) {
+    background-color: #ffffff;
+    color: #475569;
+    border-color: #fecdd3;
+}
+
+.cat-btn:not(.active):hover {
+    background-color: #fff1f2;
+    color: #e11d48;
+}
+
+/* Custom Animation for Spinner */
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spinSlow 12s linear infinite;
+}
+
+/* Smooth Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #fff1f2;
+}
+::-webkit-scrollbar-thumb {
+    background: #fda4af;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e11d48;
+}
